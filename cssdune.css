@@ -43,28 +43,34 @@ margin-top: 20px;
 }
 
 
-.button__play{
+.button{
+  
+ 
+  
+
+display: inline-block;
+  padding: 10px;
   color: white;
-   text-decoration: none
-  font-weight: 700;
-   padding: .8em 1em calc(.8em + 3px);
-background: green;
 }
 
-.movie__button{
-  
+.button__green{
+  background-color: green;
 justify-content:center;
 align-items:center;
 margin-top: 20px;
 }
-.button__tolist{
-  color: white;
-    text-decoration: none;
-     padding: .8em 1em calc(.8em + 3px);
-font-weight: 700;
+
+.button__blue{
+
+    
   background-color: #00cccc;
 }
 
+  .button__red{
+
+background-color: red;
+
+  }
 /*sprite with stars*/
 #reviewStars-input input:checked ~ label, #reviewStars-input label, #reviewStars-input label:hover, #reviewStars-input label:hover ~ label {
   background: url('http://positivecrash.com/wp-content/uploads/ico-s71a7fdede6.png') no-repeat;
@@ -157,28 +163,21 @@ max-width: 200px;
 
   }
 
-.fontsecond{
+.second__block{
   display: flex;
  
 
   background-color: #CECECE;
 }
-.img__joker{
-margin-bottom: : 20px;
-margin-left: 10px;
-width: 314px;
-height: 445px;
- border: 1px solid black;
- float: left;
- margin-bottom: 20px}
 
   .user__text{
    padding-left: 20px;
     flex: 1 auto;}
     
 
-      .user__joker{
+      .user__block{
         margin-left:10px; 
+        padding: 5px;
 
     }
     .slogan__text{
@@ -186,37 +185,9 @@ height: 445px;
     }
     
 
-  .button__rejected{
-    text-decoration: none;
-    font-size: 2em;
-  font-weight: bold;
-  background-color: red;
-color: white;
-justify-content: center;
-align-items: flex-end;
-}
-
-.button__new {
-    text-decoration: none;
-    font-size: 2em;
-  font-weight: bold;
-  background-color: green;
-  color: white;
-justify-content: center;
-align-items: flex-end;
-  }
-  .button__view{
-    text-decoration: none;
-    font-size: 2em;
-  font-weight: bold;
-  color:white;
-  background-color: #00C8E0;
-
-justify-content: center;
-align-items: flex-end;
-  }
   
-  .button__add{
+  
+  .button__red__new{
  text-decoration: none;
   color: #fff;
   text-align: center ;
