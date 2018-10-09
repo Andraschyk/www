@@ -10,6 +10,42 @@ body{
 img{
   max-width: 100%;}
 
+.title {
+    
+    overflow: hidden;
+    
+    text-align: center;
+
+    font-size: 25px;}
+    .title:before,
+.title:after{
+  content: "";
+    
+    display: inline-block;
+    vertical-align: middle;
+    
+    width: 100%;
+    height: 2px;
+   
+    background-color: #f4801a;
+   
+    position: relative;
+}
+  .title:before {
+    /* Ставим левую линию слева от текста, смещая ее на 100% влево */
+    margin-left: -100%;
+    /* Отступ линии от заголовка */
+    left: -14px;
+}
+.title:after {
+    /* Ставим правую линию справа от текста, смещая ее на 100% вправо */
+    margin-right: -100%;
+    /* Отступ линии от заголовка */
+    right: -14px;}
+
+
+
+
 
 .movie{
     display: flex;
