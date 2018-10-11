@@ -17,18 +17,7 @@ padding-left: 30px;
 padding-right: 30px;
 }
   
-  .container{
-color: white;
- background: #D1C3C3;
-  height: 52px;
-  display: flex;
-  align-items: center;
-  justify-content:  center;
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  flex-basis: 25%;
-} 
+ 
   
  .container__one{
     background-image: url('../img/advantage-bg1.jpg'); 

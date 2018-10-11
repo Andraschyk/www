@@ -1,0 +1,297 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  vertical-align: baseline;
+}
+html{
+  height: 100%;
+}
+body{
+  min-height: 100%;
+  font-size: 13px;
+  font-family: Arial, Helvetica, sans-serif ;
+}
+body:before{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  height: 230px;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#eaeaea+0,ffffff+100 */
+  background: rgb(234,234,234); /* Old browsers */
+  background: -moz-linear-gradient(top, rgba(234,234,234,1) 0%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(234,234,234,1) 0%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(234,234,234,1) 0%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eaeaea', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+}
+img{
+  max-width: 100%;
+}
+[href^="tel:"]{
+  text-decoration: none;
+  white-space: nowrap;
+}
+.ta-center{
+  text-align: center;
+}
+.header{
+  padding-top: 25px;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 2;
+  box-shadow: inset 0 3px 0 0 #3f4e86;
+}
+.header__top{
+  background: #3f4e86;
+  padding: 10px 15px;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 1px;
+}
+@media (min-width: 560px ){
+  .header__top{
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 460px ){
+  .header__bottom{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .header__bottom > *{
+    flex: 1 50%;
+  }
+}
+@media (min-width: 850px ){
+  .header__bottom > *{
+    flex: 1 25%;
+    max-width: 25%;
+  }
+}
+.logo{
+  display: flex;
+  height: 52px;
+  background: #ededed;
+  justify-content: center;
+  align-items: center;
+}
+.header__top a{
+  color: #aad4ff;
+}
+.benefits{
+  height: 52px;
+  background: #333;
+  background-size: cover;
+  background-position: center center;
+}
+.benefits_pos{
+  position: relative;
+  padding-left: 70px;
+}
+.benefits_pos .benefits__icon{
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.benefits_flex{
+  display: flex;
+  align-items: center;
+}
+.benefits__text{
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: bold;
+  padding-right: 15px;
+}
+.position-absolute-center{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+.benefits_flex .benefits__icon{
+  max-width: 70px;
+  min-width: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.benefits_bg1{
+  background-image: url('../img/benefits_bg1.png');
+}
+.benefits_bg2{
+  background-image: url('../img/benefits_bg2.png');
+}
+.benefits_bg3{
+  background-image: url('../img/benefits_bg3.png');
+}
+.wrapper{
+  padding: 0 20px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+.wrapper_full-width{
+  max-width: 10000px;
+}
+.footer__inner{
+  padding: 10px 0;
+  border-top: 1px solid #8a8a8a;
+  color: #6b6b6b;
+  font-size: 12px;
+}
+@media (min-width: 560px ){
+  .footer__inner{
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.footer a{
+  color: inherit;
+}
+.fixed-footer,.fixed-header{
+  display: flex;
+  flex-direction: column;
+}
+.fixed-header{
+  height: 100%;
+}
+.page,.footer{
+  position: relative;
+  z-index: 1;
+}
+.fixed-header .page{
+  overflow-y: scroll; 
+}
+.fixed-footer .page{
+  flex: 1 auto;
+}
+.fixed-footer .footer{
+  margin-top: auto;
+}
+.m-b-20{
+  margin-bottom: 20px;
+}
+.button{
+  padding: 12px 15px;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: orange;
+  color: #fff;
+  display: inline-block;
+}
+.button_green{
+  background: green;
+}
+.movie__description-row{
+  margin: 20px 0;
+}
+.movie__slogan{
+  font-style: italic;
+}
+.movie__title{
+  font-size: 2em;
+  font-weight: bold;
+  color: #333;
+}
+.goods .top{
+  color: red;
+  text-align: right;
+}
+.goods .title{
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+.goods .price{
+
+}
+.goods .price span{
+  font-weight: bold;
+}
+.goods .buy-box{
+  display: flex;
+}
+
+.goods__top{
+  color: red;
+  text-align: right;
+}
+.goods__title{
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+.goods__price{
+
+}
+.goods__price span{
+  font-weight: bold;
+}
+.goods__buy-box{
+  display: flex;
+}
+/*
+  властивості - position
+  - staic - по замовчуваню, це елемент без позиціювання (нічого не працює)
+  - relative - елемент залишається на свому місці, 
+    але можна посунути візуально блок
+  - absolute - вибиває елемент з потоку
+   і позиціонує його відносно першого батьківського елемента
+   з позиціюванням не static
+   - fixed -  вибиває елемент з потоку та позиціонує його відносно вікна переглядача
+   top, bottom, left, right, z-index;
+*/
+.author{
+  display: block;
+  text-decoration: none;
+  position: relative;
+  padding: 20px;
+  box-shadow: 0 0 10px 0 #333;
+  min-height: 120px;
+  margin: 20px 0;
+}
+.author__avatar{
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  width: 80px;
+}
+.author__avatar img{
+  max-height: 80px;
+}
+.author__info{
+  padding-left: 100px; 
+}
+ /*медіазапит CSS*/
+ /*@media - ключове слово*/
+ /* ( тут пишем правило спрацювання )*/
+ /* { тут селестори та стилі }*/
+@media ( min-width: 560px ) {
+
+  .movie{
+    display: flex;
+    /*display: flex; 
+      - вмикає flex поведінку, 
+      ставить дочірні блоки в ряд,
+      робить їх по ширині свого контенту
+    */
+  }
+  .movie__poster{
+    max-width: 200px;
+    /* обмежує блок з постером по ширині*/
+  }
+  .movie__description{
+    padding-left: 20px;
+    flex: 1 auto;
+    /*flex: 1 auto; 
+    заставляє цей блок тягнутися 
+    по всій доступній йому ширині*/
+  }
+}k,
