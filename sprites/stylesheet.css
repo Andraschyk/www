@@ -1,28 +1,23 @@
-.icon {
-    background-image: url(icons.png);
+.sprite {
+    background-image: url(spritesheet.png);
     background-repeat: no-repeat;
-    display: inline-block;
+    
 }
 
-.icon-people {
+.sprite-icon-piople {
     width: 32px;
     height: 26px;
     background-position: -5px -5px;
 }
 
-.icon-tie {
+.sprite-icon-tie {
     width: 17px;
     height: 32px;
     background-position: -47px -5px;
 }
 
-.icon-white-board {
+.sprite-icon-tv {
     width: 25px;
     height: 32px;
     background-position: -5px -47px;
-}
-.content-text{
-    display: flex;
-    position: relative;
-
 }
