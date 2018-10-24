@@ -143,6 +143,7 @@ body{
 .fixed-footer .footer{
   margin-top: auto;
 }
+
 [href^="tel:"] {
   text-decoration: none;
   white-space: nowrap;
@@ -229,6 +230,57 @@ body:before{
 }
 
 
+.tabs__item.active{
+  display: block;
+
+}
+.tabs__item{
+  display: none;
+
+}
+.tabs__nav a.active {
+  color: red;
+
+}
+
+.menu-opener{
+  position: fixed;
+  top: 20px;
+  right: 10px;
+  z-index: 6;
+}
+.burger{
+  background: #3f4e86;
+  padding: 10px;
+  width: 70px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.burger span{
+  height: 5px;
+  margin: 5px;
+  background: #fff;
+}
+.menu-opener.active .burger span:nth-child(2){
+  display: none;
+}
+.menu-opener.active .burger span:nth-child(1){
+  position: absolute;
+  width: 4px;
+  height: 10px;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  margin: 0;
+}
+.menu-opener.active .burger span:nth-child(3){
+  background: none;
+  height: 38px;
+  border: 4px solid #fff;
+  border-radius: 50%;
+}
  
 .menu ul {
   list-style: none; 
@@ -340,39 +392,42 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#586799', end
 
 
 
-/*.text__title{
-  font-size: 24px; 
-  color: #626c97;  
-}
-.text__text{
-   font-size: 13px;
-}
-.text__text span {
-  color: #3f4e86;
-} 
-.text__title_black{
-  color: black;
-  font-size: 21px;
-}
-.text__subtitle{
-  font-size: 17px;
-  color: black;
-}*/
 
-.painted-block{
-  background: #3f4e86;
+
+.square-block{
+ background: #3f4e86;
   color: #cacfe2;
   font-size: 12px;
-  padding: 15px 10px;
-  min-height: 140px;
+  padding: 13px 10px;
+  height: 140px;  
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 20px;
-  text-align: center; 
-
+  text-align: center;  }
+.square-block:hover{
+  background: #f9a513;
+  color: #343434;
 }
+.square-block:hover > .sprite-standing-man_hower{
+  background-position: -198px -147px;
+} 
+.square-block:hover >  .sprite-clock_hower{
+  background-position: 54px 53px;
+} 
+.square-block:hover >  .sprite-person-half_hower {
+  background-position: -189px -51px;
+} 
+.square-block:hover >  .sprite-hat-_hower{
+  background-position: -141px -101px;
+} 
+.square-block:hover >  .sprite-bulb_hower{
+  background-position: -90px -5px;
+} 
+.square-block:hover >  .sprite-calendar_hower{
+  background-position: -139px -53px;
+} 
 .block__circle{
   border-radius: 100%;
   width: 60px; 
@@ -404,9 +459,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#586799', end
   
   text-align: left;
 }
-/*p{
-  margin: 10px 0;
-}*/
+
 .block_phrase .text__subtitle{
   text-align: center; 
 }
